@@ -1,10 +1,4 @@
-# Audio
-PRODUCT_PACKAGES += \
-    audio.a2dp.default \
-    audio.primary.universal7420 \
-    audio.r_submix.default \
-    audio.usb.default \
-    tinymix
+# Use prebuild OSS Unified Audio HAL fron NN 
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -12,7 +6,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf \
-    $(LOCAL_PATH)/configs/mixer_paths.xml:system/etc/mixer_paths.xml
+    $(LOCAL_PATH)/configs/mixer_paths_0.xml:system/etc/mixer_paths_0.xml
 
 # common build properties
 PRODUCT_PROPERTY_OVERRIDES += \
